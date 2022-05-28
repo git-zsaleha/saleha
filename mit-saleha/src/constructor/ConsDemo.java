@@ -1,7 +1,7 @@
 package constructor;
 
 public class ConsDemo {
-	ConsDemo(){//constructor
+       ConsDemo() {//constructor
 		System.out.println("cons called...");
 	}
 	String s;
@@ -14,6 +14,7 @@ public class ConsDemo {
 		System.out.println("Cons called....:"+s+"............"+i);
 		
 	}
+	
 	public static void main(String[] args) {
 		ConsDemo obj=new ConsDemo();
 		System.out.println("...............");

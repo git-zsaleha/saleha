@@ -5,7 +5,7 @@ public class StaticDemo {
 		MothersKitchen.food();
 		MothersKitchen.food();
 		MothersKitchen.food2();
-	}	
+ 	}	
 }
 class Kitchen{
 	int i;

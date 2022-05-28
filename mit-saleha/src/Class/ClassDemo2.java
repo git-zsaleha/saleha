@@ -39,7 +39,7 @@ public class ClassDemo2 {
 	}
 	
 	void met3(boolean boo) {
-		System.out.println("booooooooooooooooooooooooooooooo");
+		System.out.println("booooooooooooooo");
 	}
 	
 	void met4(int a[]) {
