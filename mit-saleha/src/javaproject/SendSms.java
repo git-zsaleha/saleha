@@ -49,7 +49,8 @@ public class SendSms {
 	public static void main(String[] args) {
 		System.out.println("program started");
 	
-		SendSms.sendSms("this Program is my first program which run successfully,and i am very happyyy..." ,"8863022348");
+		SendSms.sendSms("Health is not just about diet.It's also about a way of thinking and a way of being"
+				+ "  THANKS..." ,"8863022348");
 	}
 }
 	
