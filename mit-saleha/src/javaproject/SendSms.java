@@ -49,7 +49,7 @@ public class SendSms {
 	public static void main(String[] args) {
 		System.out.println("program started");
 	
-		SendSms.sendSms("Health is not just about diet.It's also about a way of thinking and a way of being"
+		SendSms.sendSms("Hi CHARLIE, thisis a reminder for your appointment on 4/6/2022 at 1 PM,"
 				+ "  THANKS..." ,"8863022348");
 	}
 }
