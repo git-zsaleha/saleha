@@ -4,13 +4,13 @@ import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 public class SendEmail {
-	      public static void main(String[] args) {
+	      public static void main(String[] args) throws AddressException, MessagingException {
+	    	 
 	    	  String to="zulsaleha1212@gmail.com";
-	  		
-	  		String from="safa78614@gmail.com";
-	  		
-	  		String host="8080";
-	  		
+		  		
+		  		String from="safa78614@gmail.com";
+		  		
+		  		String host="8080";
 	  		final String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
 	  		
 	  		Properties properties = System.getProperties();
@@ -25,7 +25,7 @@ public class SendEmail {
 	  		properties.put("mail.store.protocol", "pop3");
 	  		properties.put("mail.transport.protocol", "smtp");
 	  		final String username = "safa78614@gmail.com";
-	  		final String password = "";
+	  		final String password = "Fatma@2020";
 	  	    
 	  	    Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
 
@@ -37,18 +37,19 @@ public class SendEmail {
 
 	          });
 	  		
-	  		try {
+	  		
 	  			 MimeMessage message = new MimeMessage(session);
 	  			 message.setFrom(new InternetAddress(from));
 	  			 message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 	  			 message.setSubject("This is the Subject Line!");
-	  			 message.setText("This is actual message");
+	  			 message.setText("This letter is to tell you that you have no contigous diseas and should be allowed to keep on going to work\r\n"
+	  			 		+ " without the threat of harming peers.It is not required to quarantine \r\n"
+	  			 		+ "as well as limit interaction along with contactwith peers based on this symptom.e");
 	  			 Transport.send(message);
 	  	         System.out.println("Sent message successfully....");
-	  		} catch(Exception e) {
-	  			e.printStackTrace();
-	  		}
-	   }
-	}
+	  		
+	  		}}
+	   
+	
 
 
